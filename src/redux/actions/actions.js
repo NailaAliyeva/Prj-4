@@ -28,7 +28,7 @@ export const setLinkActive = (payload) => ({
 });
 
 export const getMovieList = async (searchLine) => {
-  const apiKey = "23dbb244";
+  const apiKey = "615caeba";
   const res = await axios.get(baseUrl + `?s=${searchLine}&apikey=${apiKey}`);
   const data = res.data.Search;
   if (!data) {
